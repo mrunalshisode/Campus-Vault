@@ -22,26 +22,28 @@ Secure system using role-based authentication.
 Improved usability compared to traditional ERP systems.
 
 🚀 Key Features:
-🔐 Secure login using Firebase Authentication
-👥 Role-Based Access (Student / Faculty / Admin)
-📊 Attendance tracking system
-📝 Marks and academic performance management
-📁 Document upload, storage, and access
-📢 Activity and event tracking
-☁️ Cloud-based data management
-⚡ Fast and user-friendly interface
+🔐 Secure login using Firebase Authentication.
+👥 Role-Based Access (Student / Faculty / Admin).
+📊 Attendance tracking system.
+📝 Marks and academic performance management.
+📁 Document upload, storage, and access.
+📢 Activity and event tracking.
+☁️ Cloud-based data management.
+⚡ Fast and user-friendly interface.
 
 🏗️ System Architecture
+
 Architecture: Client–Cloud Architecture
 Design: Modular approach
 Modules:
-Authentication
-Attendance Management
-Marks Management
-Document Management
-Activity Tracking
+Authentication,
+Attendance Management,
+Marks Management,
+Document Management,
+Activity Tracking.
 
 Tracking
+
 🛠️ Tech Stack:-
 📱 Frontend:
 XML (UI Design)
@@ -51,31 +53,35 @@ Firebase Authentication
 Firebase Firestore (NoSQL Database)
 Firebase Cloud Storage
 💻 Development:
-Java (Core Logic)
+Java (Core Logic),
 Android Studio
 
-🔄 Methodology
-Iterative SDLC Model
-Role-Based Access Control (RBAC)
-Client–Server Architecture
-Secure authentication and session handling
+🔄 Methodoly
+
+Iterative SDLC Model,
+Role-Based Access Control (RBAC),
+Client–Server Architecture,
+Secure authentication and session handling.
 
 ✅ Results
-Centralized system for managing all student activities
-Improved accessibility of academic data
-Reduced dependency on multiple platforms
-Enhanced security and data organization
-Better user experience compared to existing ERP systems
+
+Centralized system for managing all student activities.
+Improved accessibility of academic data.
+Reduced dependency on multiple platforms.
+Enhanced security and data organization.
+Better user experience compared to existing ERP systems.
 
 🔮 Future Enhancements
-Integration with college ERP systems
-Web-based version
-Advanced analytics for student performance
-AI-based recommendations and insights
+
+Integration with college ERP systems.
+Web-based version.
+Advanced analytics for student performance.
+AI-based recommendations and insights.
 
 ⚙️ Installation
+
 Clone the repository:
 git clone https://github.com/mrunalshisode/Campus-Vault.git
-Open in Android Studio
-Sync Gradle and run the project
+Open in Android Studio.
+Sync Gradle and run the project.
 

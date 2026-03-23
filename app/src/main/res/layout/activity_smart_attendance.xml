@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0FDF4">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#059669"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📋 Mark Attendance"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="#059669"
+            android:backgroundTint="#FFFFFF"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <!-- Filter Card -->
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Class Details"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#065F46"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Subject -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:textSize="12sp"
+                android:textColor="#6B7280"
+                android:layout_marginBottom="4dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerSubject"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/btn_dropdown"/>
+
+            <!-- Year -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year"
+                android:textSize="12sp"
+                android:textColor="#6B7280"
+                android:layout_marginBottom="4dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerYear"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/btn_dropdown"/>
+
+            <!-- Department -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Department"
+                android:textSize="12sp"
+                android:textColor="#6B7280"
+                android:layout_marginBottom="4dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerDept"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/btn_dropdown"/>
+
+            <!-- Date -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="12sp"
+                android:textColor="#6B7280"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/etDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="DD/MM/YYYY"
+                android:padding="10dp"
+                android:layout_marginBottom="12dp"
+                android:background="@android:drawable/edit_text"/>
+
+            <Button
+                android:id="@+id/btnLoadStudents"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Load Students →"
+                android:backgroundTint="#059669"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Student count + Save button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:id="@+id/layoutSaveBar">
+
+        <TextView
+            android:id="@+id/tvStudentCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0 students"
+            android:textSize="14sp"
+            android:textColor="#065F46"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvPresentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Present: 0"
+            android:textSize="13sp"
+            android:textColor="#059669"
+            android:layout_marginEnd="12dp"/>
+
+        <Button
+            android:id="@+id/btnSaveAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save All"
+            android:backgroundTint="#059669"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+    <!-- Students RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerStudents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
+
+</LinearLayout>

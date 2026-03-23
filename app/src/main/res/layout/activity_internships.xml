@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF1F0">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#E11D48"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="💼 My Internships"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="#E11D48"
+            android:backgroundTint="#FFFFFF"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Add Internship Card -->
+            <androidx.cardview.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Internship"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#9F1239"
+                        android:layout_marginBottom="12dp"/>
+
+                    <EditText
+                        android:id="@+id/etCompany"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Company Name"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:drawable/edit_text"/>
+
+                    <EditText
+                        android:id="@+id/etRole"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Role / Position"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:drawable/edit_text"/>
+
+                    <EditText
+                        android:id="@+id/etDuration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Duration (e.g. June 2025 - Aug 2025)"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:drawable/edit_text"/>
+
+                    <EditText
+                        android:id="@+id/etLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Location (City / Remote)"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:drawable/edit_text"/>
+
+                    <EditText
+                        android:id="@+id/etStipend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Stipend (optional)"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:drawable/edit_text"/>
+
+                    <Button
+                        android:id="@+id/btnPickOfferLetter"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="📎 Upload Offer Letter"
+                        android:backgroundTint="#FFE4E6"
+                        android:textColor="#9F1239"
+                        android:layout_marginBottom="6dp"/>
+
+                    <TextView
+                        android:id="@+id/tvOfferFileName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No file selected"
+                        android:textColor="#9CA3AF"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="12dp"/>
+
+                    <Button
+                        android:id="@+id/btnSaveInternship"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:text="Save Internship"
+                        android:backgroundTint="#E11D48"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Internships List -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MY INTERNSHIPS"
+                android:textColor="#E11D48"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.1"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerInternships"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:nestedScrollingEnabled="false"
+                android:clipToPadding="false"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

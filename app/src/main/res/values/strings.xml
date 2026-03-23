@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Campus Vault</string>
+    <string name="title_campus_vault">Campus Vault</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_register">Register</string>
+</resources>

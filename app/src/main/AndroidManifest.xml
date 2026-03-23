@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.campusvault">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CampusVault">
+
+        <activity android:name=".LoginActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".RegisterActivity" android:exported="false" />
+        <activity android:name=".StudentDashboardActivity" android:exported="false" />
+        <activity android:name=".FacultyDashboardActivity" android:exported="false" />
+        <activity android:name=".AdminDashboardActivity" android:exported="false" />
+        <activity android:name=".StudentProfileActivity" android:exported="false" />
+        <activity android:name=".StudentAttendanceActivity" android:exported="false" />
+        <activity android:name=".AttendanceActivity" android:exported="false" />
+        <activity android:name=".ResultsActivity" android:exported="false" />
+        <activity android:name=".EnterMarksActivity" android:exported="false" />
+        <activity android:name=".UploadDocumentActivity" android:exported="false" />
+        <activity android:name=".MyUploadsActivity" android:exported="false" />
+        <activity android:name=".DocumentsActivity" android:exported="false" />
+        <activity android:name=".MainActivity" android:exported="false" />
+        <activity android:name=".ActivitiesActivity"
+            android:exported="false"/>
+        <activity android:name=".InternshipsActivity"
+            android:exported="false"/>
+        <activity android:name=".SmartAttendanceActivity"
+            android:exported="false"/>
+        <activity android:name=".HodDashboardActivity"
+            android:exported="false"/>
+        <activity android:name=".HodDashboardActivity"
+            android:exported="false"/>
+        <activity android:name=".HodAllStudentsActivity"
+            android:exported="false"/>
+        <activity android:name=".HodDefaultersActivity"
+            android:exported="false"/>
+        <activity android:name=".HodResultsActivity"
+            android:exported="false"/>
+        <activity android:name=".HodAttendanceActivity"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

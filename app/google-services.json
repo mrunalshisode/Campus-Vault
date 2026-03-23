@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "595233904809",
+    "project_id": "campus-vault-efd33",
+    "storage_bucket": "campus-vault-efd33.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595233904809:android:afeb5f6ec4edba2a81b1b8",
+        "android_client_info": {
+          "package_name": "com.campusvault"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595233904809-6urkrunp3srl4vcc6thv5ebf1v5a95k0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.campusvault",
+            "certificate_hash": "9686b675cfbf1da3a10278ea0b59724e36fd934f"
+          }
+        },
+        {
+          "client_id": "595233904809-7ql0sta2lv4arhuj8s739s8tjn1477b8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9KJA8qAOBaRd4VtaMdNJhT4vqoTcQ46w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595233904809-7ql0sta2lv4arhuj8s739s8tjn1477b8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
